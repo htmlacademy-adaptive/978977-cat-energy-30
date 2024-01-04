@@ -1,0 +1,49 @@
+.card__link {
+  text-decoration: none;
+}
+.card__title {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+}
+.card__item {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.card__buttun {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: $bg-basic-green;
+}
+.card__title-more {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #111111;
+}
+.card__description {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.card__buttun-more {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $base-color-text;
+  text-decoration: none;
+  background-color: #f2f2f2;
+}
