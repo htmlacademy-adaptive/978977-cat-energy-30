@@ -6,18 +6,21 @@
   color: #111111;
   text-transform: uppercase;
 }
+
 .location__address {
   line-height: 20px;
   font-style: normal;
 }
+
 .location__map {
   width: 320px;
   height: 362px;
-  background-image: url(../../images/map@1x.png);
+  background-image: url("../../images/map@1x.png");
   background-color: $bg-basic-grey;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .location__catalog {
   background-color: #f2f2f2;
 }

@@ -1,6 +1,7 @@
 .example {
   background-color: $bg-basic-grey;
 }
+
 .example__title {
   font-family: $primary-font;
   font-size: 36px;
@@ -8,17 +9,20 @@
   font-weight: 400;
   color: $secondary-color-text;
 }
+
 .example__value {
   font-family: $primary-font;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
 }
+
 .example__text {
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
 }
+
 .example__costs {
   font-family: $primary-font;
   font-size: 14px;

@@ -1,6 +1,7 @@
 .card__link {
   text-decoration: none;
 }
+
 .card__title {
   font-family: $primary-font;
   font-size: 16px;
@@ -9,11 +10,13 @@
   text-transform: uppercase;
   color: #222222;
 }
+
 .card__item {
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
 }
+
 .card__buttun {
   font-family: $primary-font;
   font-size: 16px;
@@ -24,6 +27,7 @@
   color: #ffffff;
   background-color: $bg-basic-green;
 }
+
 .card__title-more {
   font-family: $primary-font;
   font-size: 16px;
@@ -32,11 +36,13 @@
   text-transform: uppercase;
   color: #111111;
 }
+
 .card__description {
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
 }
+
 .card__buttun-more {
   font-family: $primary-font;
   font-size: 16px;
