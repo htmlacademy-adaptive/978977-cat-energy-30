@@ -1,0 +1,19 @@
+.main-footer {
+  background-color: #f2f2f2;
+}
+
+.main-footer__social-list {
+  list-style: none;
+}
+
+.main-footer__social-link {
+  fill: #666666;
+}
+
+.main-footer__logo-academy-link {
+  color: $base-color-text;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-decoration: none;
+}

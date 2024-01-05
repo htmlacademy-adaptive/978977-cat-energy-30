@@ -1,0 +1,46 @@
+.additional__title {
+  font-family: $primary-font;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.additional__list {
+  list-style: none;
+}
+
+.additional__item-title {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.additional__volume,
+.additional__price {
+  line-height: 14px;
+  font-weight: 400;
+}
+
+.additional__button {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: $bg-basic-green;
+}
+
+.additional__promo {
+  background-color: $bg-basic-green;
+  background-image: url("../../images/catalog-background-cat-m@1x.png");
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 290px;
+  background-size: cover;
+}

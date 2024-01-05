@@ -1,0 +1,80 @@
+.advantages__title {
+  font-family: $primary-font;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $secondary-color-text;
+}
+
+.advantages__list {
+  list-style: none;
+}
+
+.advantages__item--benefit,
+.advantages__item--easy,
+.advantages__item--meal,
+.advantages__item--result {
+  position: relative;
+  height: 60px;
+  padding-left: 80px;
+}
+
+.advantages__item--benefit::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../images/icons/advantages-1.svg");
+  background-color: $bg-basic-green;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.advantages__item--easy::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../images/icons/advantages-2.svg");
+  background-color: $bg-basic-green;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.advantages__item--meal::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../images/icons/advantages-3.svg");
+  background-color: $bg-basic-green;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.advantages__item--result::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../images/icons/advantages-4.svg");
+  background-color: $bg-basic-green;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
