@@ -6,13 +6,24 @@
 .form-details__label,
 .form-details__filter-item,
 .form-details__input,
-.form-details__filter-label,
 .form-details__text {
   font-family: $primary-font;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.form-details__mail {
+  background-image: url("../../images/icons/email-stroke.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+.form-details__telephone {
+  background-image: url("../../images/icons/phone-stroke.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
 }
 
 .form-details__filter-list {
