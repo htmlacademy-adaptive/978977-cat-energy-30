@@ -1,3 +1,42 @@
+.additional__promo {
+  position: relative;
+  background-color: $bg-basic-green;
+  background-image: url("../../images/catalog-background-cat-m@1x.png");
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 290px;
+  background-size: cover;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 78px;
+    height: 80px;
+    background-image: url("../../images/icons/icon_gift.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 200px;
+    width: 707px;
+    background-image: url("../../images/catalog-background-cat-t@1x.png");
+    background-repeat: no-repeat;
+    background-color: $bg-basic-green;
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 288px;
+    width: 245px;
+    background-image: url("../../images/index-background-cat-d@1x.png");
+    background-repeat: no-repeat;
+    background-color: $bg-basic-green;
+    background-size: cover;
+  }
+}
+
 .additional__title {
   font-family: $primary-font;
   font-size: 24px;
@@ -34,13 +73,4 @@
   color: #ffffff;
   text-decoration: none;
   background-color: $bg-basic-green;
-}
-
-.additional__promo {
-  background-color: $bg-basic-green;
-  background-image: url("../../images/catalog-background-cat-m@1x.png");
-  background-repeat: no-repeat;
-  width: 280px;
-  height: 290px;
-  background-size: cover;
 }

@@ -30,3 +30,32 @@
   font-weight: 400;
   text-transform: uppercase;
 }
+
+.example__slider {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 257px;
+    background-image: url("../../images/icons/state-default.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &:hover::before {
+    background-image: url("../../images/icons/state-hover.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &:active::before {
+    background-image: url("../../images/icons/state-active.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

@@ -24,6 +24,11 @@
   background-image: url("../../images/icons/phone-stroke.svg");
   background-repeat: no-repeat;
   background-size: 20px 20px;
+  //не получается менять цвет svg
+
+  &:hover {
+    fill: $bg-basic-green;
+  }
 }
 
 .form-details__filter-list {
