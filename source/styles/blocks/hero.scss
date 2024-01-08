@@ -4,10 +4,24 @@
   height: 302px;
   background-image: url("../../images/index-background-cat-m@1x.png");
   background-repeat: no-repeat;
+  background-size: cover;
   background-color: $bg-basic-green;
   color: #ffffff;
   font-family: $primary-font;
-  opacity: 0.85;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 694px;
+    width: 720px;
+    background-image: url("../../images/index-background-cat-d@1x.png");
+    background-repeat: no-repeat;
+    background-color: $bg-basic-green;
+    background-size: cover;
+  }
 }
 
 .hero::before {

@@ -1,3 +1,28 @@
 .main-header {
   padding: 0;
 }
+
+.main-header__logo-text {
+  @media (min-width: $tablet-width) {
+    height: 18px;
+    width: 101px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 21px;
+    width: 118px;
+  }
+}
+
+.main-header__logo {
+  width: 202px;
+  height: 59px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+}

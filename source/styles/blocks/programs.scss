@@ -48,15 +48,28 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $secondary-color-text;
-}
 
-.programs__link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 32px;
-  height: 10px;
-  background-image: url("../../images/icons/icon_arrow.svg");
-  background-repeat: no-repeat;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 32px;
+    height: 10px;
+    background-image: url("../../images/icons/icon_arrow.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover::after {
+    background-image: url("../../images/icons/Hover-icon_arrow.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &:active::after {
+    background-image: url("../../images/icons/Hover-icon_arrow.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.3;
+  }
 }
