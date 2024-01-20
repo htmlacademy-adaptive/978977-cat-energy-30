@@ -1,53 +1,97 @@
 .hero {
-  position: relative;
-  width: 320px;
-  height: 302px;
-  background-image: url("../../images/index-background-cat-m@1x.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: $bg-basic-green;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-image:
+    linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 100%, #ffffff 10%),
+    image-set(
+    url("../../images/index-background-cat-m@1x.png") 1x,
+    url("../../images/index-background-cat-m@2x.png") 2x);
+  background-size: 320px 302px;
   color: #ffffff;
   font-family: $primary-font;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    @media (min-width: $desktop-width) {
+      outline: 3px solid rgb(198, 65, 225);
+      width: 1041px;
+      height: 694px;
+      top: 0;
+      left: 720px;
+      background-image:
+        linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 100%, #ffffff 10%),
+        image-set(
+        url("../../images/index-background-cat-d@1x.png") 1x,
+        url("../../images/index-background-cat-d@2x.png") 2x);
+      background-size: 1041px 694px;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
 
   @media (min-width: $tablet-width) {
-    background-image: none;
-    background-color: #ffffff;
+    background: none;
+    min-height: 877px;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 694px;
-    width: 720px;
-    background-image: url("../../images/index-background-cat-d@1x.png");
-    background-repeat: no-repeat;
-    background-color: $bg-basic-green;
-    background-size: cover;
+    min-height: 694px;
+    padding: 0 110px;
   }
-}
-
-.hero::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 280px;
-  height: 270px;
-  background-image: url("../../images/index-cat-mobile@1x.png");
-  background-position: 50% 0;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .hero__title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  width: 250px;
+  text-align: center;
+  padding: 0;
+  padding-top: 27px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    width: 415px;
+    text-align: left;
+    padding-top: 67px;
+    padding-left: 90px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-top: 110px;
+    padding-left: 80px;
+  }
 }
 
 .hero__slogan {
   line-height: 14px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 90px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+  }
 }
 
 .hero__button {
@@ -56,4 +100,21 @@
   line-height: 20px;
   text-decoration: none;
   text-transform: uppercase;
+  width: 192px;
+  min-height: 20px;
+  padding: 10px 44px;
+  background-color: $bg-basic-green;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    min-height: 26px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 200px;
+  }
 }

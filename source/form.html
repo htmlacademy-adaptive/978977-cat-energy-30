@@ -36,9 +36,31 @@
             alt="Логотип магазина"
           />
         </picture>
-        <svg class="main-header__logo-text" height="18" width="101">
-          <use href="images/icons/stack.svg#logo-text"></use>
-        </svg>
+        <picture>
+          <source
+            class="main-header__logo-text"
+            height="21"
+            width="118"
+            type="image/svg+xml"
+            media="(min-width: 1440px)"
+            srcset="./images/logo_text-d.svg"
+          />
+          <source
+            class="main-header__logo-text"
+            height="18"
+            width="101"
+            type="image/svg+xml"
+            media="(min-width: 768px)"
+            srcset="./images/logo_text-t.svg"
+          />
+          <img
+            class="main-header__logo-text"
+            src="./images/logo_cat-text-m.svg"
+            height="18"
+            width="101"
+            alt="Cat Energy"
+          />
+        </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -118,35 +140,43 @@
               <li class="form-details__filter-item">
                 <label class="form-details__filter-label" for="slim">
                   <input
-                    class="form-details__input"
+                    class="visually-hidden form-details__input"
                     name="program"
                     id="slim"
                     type="radio"
                     value="slim"
                     checked
-                  />похудение
+                  />
+                  <span class="form-details__mark"></span>
+                  <span class="form-details__mark-title">похудение</span>
                 </label>
               </li>
               <li class="form-details__filter-item">
                 <label class="form-details__filter-label" for="big">
                   <input
-                    class="form-details__input"
+                    class="visually-hidden form-details__input form-details__input--result"
                     name="program"
                     id="big"
                     type="radio"
                     value="weight"
-                  />Набор массы
+                  />
+                  <span class="form-details__mark"></span>
+                  <span class="form-details__mark-title">Набор массы</span>
                 </label>
               </li>
               <li class="form-details__filter-item">
                 <label class="form-details__filter-label" for="unknown">
                   <input
-                    class="form-details__input"
+                    class="visually-hidden form-details__input form-details__input--result"
                     name="program"
                     id="unknown"
                     type="radio"
                     value="advaice"
-                  />Не знаю (Нужен ваш совет)
+                  />
+                  <span class="form-details__mark"></span>
+                  <span class="form-details__mark-title"
+                    >Не знаю (Нужен ваш совет)</span
+                  >
                 </label>
               </li>
             </ul>
@@ -263,8 +293,14 @@
       <div class="main-footer__wrapper">
         <a class="main-footer__main" href="index.html">
           <span class="visually-hidden">На главную</span>
-          <svg class="main-footer__logo-footer" height="24" width="128">
-            <use href="images/icons/stack.svg#logo-text"></use>
+          <svg
+            class="main-footer__logo-footer"
+            height="24"
+            width="128"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <use href="images/icons/stack.svg#footer-logo"></use>
           </svg>
         </a>
         <div class="main-footer__social">
@@ -275,8 +311,14 @@
                 href="https://vk.com/htmlacademy"
               >
                 <span class="visually-hidden">Мы в ВК</span>
-                <svg class="main-footer__logo-vk" height="22" width="28">
-                  <use href="images/icons/stack.svg#vk"></use>
+                <svg
+                  class="main-footer__logo-vk"
+                  height="22"
+                  width="28"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use href="images/icons/stack.svg#vkontakte"></use>
                 </svg>
               </a>
             </li>
@@ -286,7 +328,13 @@
                 href="https://www.youtube.com/user/htmlacademyru"
               >
                 <span class="visually-hidden">Мы на youtube</span>
-                <svg class="main-footer__logo-youtube" height="22" width="28">
+                <svg
+                  class="main-footer__logo-youtube"
+                  height="22"
+                  width="28"
+                  aria-hidden="true"
+                  focusable="false"
+                >
                   <use href="images/icons/stack.svg#youtube"></use>
                 </svg>
               </a>
@@ -297,7 +345,13 @@
                 href="https://t.me/htmlacademy"
               >
                 <span class="visually-hidden">Мы в telegram</span>
-                <svg class="main-footer__logo-telegram" height="22" width="28">
+                <svg
+                  class="main-footer__logo-telegram"
+                  height="22"
+                  width="28"
+                  aria-hidden="true"
+                  focusable="false"
+                >
                   <use href="images/icons/stack.svg#telegram"></use>
                 </svg>
               </a>
@@ -311,8 +365,14 @@
             aria-label="Сайт Html Academy"
           >
             <p class="main-footer__academy-title">HTML Academy</p>
-            <svg class="main-footer__logo-academy" height="34" width="27">
-              <use href="images/icons/stack.svg#academy"></use>
+            <svg
+              class="main-footer__icon-academy"
+              height="34"
+              width="27"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <use href="images/icons/stack.svg#html_academy_logo"></use>
             </svg>
           </a>
         </div>

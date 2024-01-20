@@ -1,3 +1,8 @@
+.form-details__filter {
+  outline: none;
+  border: none;
+}
+
 .form-details__list {
   list-style: none;
   padding: 0;
@@ -6,33 +11,95 @@
 .form-details__label,
 .form-details__filter-item,
 .form-details__input,
-.form-details__text {
+.form-details__text,
+.form-details__mark-title {
   font-family: $primary-font;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
+  border: none;
+  cursor: pointer;
 }
 
-.form-details__mail {
-  background-image: url("../../images/icons/email-stroke.svg");
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
-.form-details__telephone {
-  background-image: url("../../images/icons/phone-stroke.svg");
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  //не получается менять цвет svg
+.form-details__input {
+  color: $base-color-text;
+  outline: 1px solid #e7e7e7;
+  overflow: hidden;
+  appearance: none;
 
   &:hover {
+    outline: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: 1px solid $base-color-text;
+  }
+}
+
+input::-webkit-input-placeholder {
+  color: $base-color-text;
+}
+
+.form-details__mail::after {
+  mask-image: url("../../images/icons/stack.svg#email-stroke");
+  background-color: #222222;
+  background-size: 20px 20px;
+
+  &:focus,
+  &:active {
+    background-color: $bg-basic-green;
+  }
+}
+
+
+.form-details__telephone {
+  background-image: url("../../images/icons/stack.svg#phone-stroke");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+
+  &:focus,
+  &:active {
     fill: $bg-basic-green;
   }
 }
 
 .form-details__filter-list {
   list-style: none;
+}
+
+.form-details__filter-label {
+  position: relative;
+}
+
+.form-details__mark {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  outline: 1px solid #cdcdcd;
+}
+
+.form-details__input[type="radio"] + .form-details__mark {
+  background-color: #ffffff;
+}
+
+.form-details__input[type="radio"]:checked + .form-details__mark {
+  content: "";
+  background-image: url("../../images/icons/stack.svg#point-tick");
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
 }
 
 .form-details__filter-title,

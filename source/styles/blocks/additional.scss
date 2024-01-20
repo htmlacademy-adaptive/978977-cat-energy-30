@@ -7,6 +7,10 @@
   height: 290px;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/catalog-background-cat-m@2x.png");
+  }
+
   &::after {
     content: "";
     display: block;
@@ -25,15 +29,23 @@
     background-repeat: no-repeat;
     background-color: $bg-basic-green;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/catalog-background-cat-t@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
     height: 288px;
     width: 245px;
-    background-image: url("../../images/index-background-cat-d@1x.png");
+    background-image: url("../../images/catalog-background-cat-d@1x.png");
     background-repeat: no-repeat;
     background-color: $bg-basic-green;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/catalog-background-cat-d@2x.png");
+    }
   }
 }
 

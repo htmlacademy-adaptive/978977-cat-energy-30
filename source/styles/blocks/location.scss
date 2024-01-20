@@ -15,12 +15,30 @@
 .location__map {
   width: 320px;
   height: 362px;
-  background-image: url("../../images/map@1x.png");
+  background-image: image-set(url("../../images/map-m@1x.png") type("image/png") 1x, url("../../images/map-m@2x.png") type("image/png") 2x);
   background-color: $bg-basic-grey;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 400px;
+    background-image: image-set(url("../../images/map-t@1x.png") type("image/png") 1x, url("../../images/map-t@2x.png") type("image/png") 2x);
+    background-repeat: no-repeat;
+    background-color: $bg-basic-grey;
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    height: 400px;
+    background-image: image-set(url("../../images/map-d@1x.png") type("image/png") 1x, url("../../images/map-d@2x.png") type("image/png") 2x);
+    background-repeat: no-repeat;
+    background-color: $bg-basic-grey;
+    background-size: cover;
+  }
 }
 
-.location__catalog {
+.location__container {
   background-color: #f2f2f2;
 }
