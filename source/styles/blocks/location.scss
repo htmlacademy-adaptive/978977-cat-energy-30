@@ -3,7 +3,7 @@
   position: relative;
 }
 
-.location__catalog {
+.location--catalog {
   background-color: #f2f2f2;
 }
 
@@ -80,7 +80,8 @@
   bottom: 0;
   width: 100%;
   height: 362px;
-  background-image: image-set(
+  background-image:
+    image-set(
     url("../../images/map-m@1x.png") type("image/png") 1x,
     url("../../images/map-m@2x.png") type("image/png") 2x
   );
@@ -96,7 +97,8 @@
     left: 50%;
     transform: translateX(-50%);
     top: 139px;
-    background-image: image-set(
+    background-image:
+      image-set(
       url("../../images/map-pin@1x.png") type("image/png") 1x,
       url("../../images/map-pin@2x.png") type("image/png") 2x
     );
@@ -106,7 +108,8 @@
 
   @media (min-width: $tablet-width) {
     height: 400px;
-    background-image: image-set(
+    background-image:
+      image-set(
       url("../../images/map-t@1x.png") type("image/png") 1x,
       url("../../images/map-t@2x.png") type("image/png") 2x
     );
@@ -117,7 +120,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-image: image-set(
+      background-image:
+        image-set(
         url("../../images/map-pin-t@1x.png") type("image/png") 1x,
         url("../../images/map-pin-t@2x.png") type("image/png") 2x
       );
@@ -127,7 +131,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: image-set(
+    background-image:
+      image-set(
       url("../../images/map-d@1x.png") type("image/png") 1x,
       url("../../images/map-d@2x.png") type("image/png") 2x
     );

@@ -2,19 +2,11 @@
   background-color: $bg-basic-grey;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(
-      to bottom,
-      $primary-background-color 619px,
-      transparent 619px
-    );
+    background-image: linear-gradient(to bottom, $primary-background-color 619px, transparent 619px);
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(
-      to bottom,
-      $primary-background-color 205px,
-      transparent 205px
-    );
+    background-image: linear-gradient(to bottom, $primary-background-color 205px, transparent 205px);
   }
 }
 
@@ -88,19 +80,11 @@
   height: 100%;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(
-      to bottom,
-      $primary-background-color 152px,
-      transparent 152px
-    );
+    background-image: linear-gradient(to bottom, $primary-background-color 152px, transparent 152px);
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(
-      to bottom,
-      $primary-background-color 138px,
-      transparent 138px
-    );
+    background-image: linear-gradient(to bottom, $primary-background-color 138px, transparent 138px);
   }
 }
 

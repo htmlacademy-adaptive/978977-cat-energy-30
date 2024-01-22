@@ -2,7 +2,7 @@
   padding-top: 24px;
   padding-bottom: 35px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 70px;
     padding-bottom: 75px;
   }
@@ -20,10 +20,10 @@
   position: relative;
   background-color: $bg-basic-green;
   background-image:
-  linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 100%, #ffffff 10%),
-  image-set(
-  url("../../images/catalog-background-cat-m@1x.png") 1x,
-  url("../../images/catalog-background-cat-m@2x.png") 2x);
+    linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 100%, #ffffff 10%),
+    image-set(
+    url("../../images/catalog-background-cat-m@1x.png") 1x,
+    url("../../images/catalog-background-cat-m@2x.png") 2x);
   background-repeat: no-repeat;
   background-position: center;
   width: 280px;
@@ -142,13 +142,14 @@
     padding: 24px 38px 28px;
     border: 1px solid #cdcdcd;
   }
-   @media (min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     padding: 15px 0;
     border-left: none;
     border-right: none;
     column-gap: 40px;
     align-items: center;
-   }
+  }
 }
 
 .additional__item-title {
@@ -169,7 +170,6 @@
 .additional__price {
   line-height: 14px;
   font-weight: 400;
-  line-height: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
