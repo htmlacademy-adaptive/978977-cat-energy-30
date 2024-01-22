@@ -20,9 +20,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 300px 300px 300px 300px;
-    grid-template-rows: 280px;
-    gap: 80px;
+    grid-template-columns: repeat(4, 245px);
+    justify-content: space-between;
+    gap: 20px 80px;
   }
 }
 

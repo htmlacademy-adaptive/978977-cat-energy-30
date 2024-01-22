@@ -1,14 +1,40 @@
+.additional__container {
+  padding-top: 24px;
+  padding-bottom: 35px;
+
+  @media (min-width:$tablet-width) {
+    padding-top: 70px;
+    padding-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 895px 245px;
+    column-gap: 80px;
+    padding-top: 76px;
+    padding-bottom: 87px;
+  }
+}
+
 .additional__promo {
   position: relative;
   background-color: $bg-basic-green;
-  background-image: url("../../images/catalog-background-cat-m@1x.png");
+  background-image:
+  linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 100%, #ffffff 10%),
+  image-set(
+  url("../../images/catalog-background-cat-m@1x.png") 1x,
+  url("../../images/catalog-background-cat-m@2x.png") 2x);
   background-repeat: no-repeat;
+  background-position: center;
   width: 280px;
   height: 290px;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../images/catalog-background-cat-m@2x.png");
+    display: flex;
+    min-height: 200px;
+    justify-content: end;
+    background-image: url("");
   }
 
   &::after {
@@ -50,15 +76,79 @@
 }
 
 .additional__title {
+  position: relative;
   font-family: $primary-font;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: #000000;
+  width: fit-content;
+  background-color: #ffffff;
+  box-shadow: -20px 0 0 $primary-background-color, 20px 0 0 $primary-background-color;
+  margin: 0;
+  margin-bottom: 35px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 2px;
+    background-color: $bg-basic-green;
+    top: 0.5em;
+    right: 0;
+    box-shadow: 100vw 0 0 $bg-basic-green;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-family: $primary-font;
+    font-size: 36px;
+    line-height: 36px;
+    box-shadow: -40px 0 0 $primary-background-color, 40px 0 0 $primary-background-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+    justify-self: start;
+  }
 }
 
 .additional__list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    width: 895px;
+  }
+}
+
+.additional__item {
+  display: grid;
+  grid-template-columns: repeat(2, 115px);
+  padding: 12px 0 17px;
+  justify-content: space-between;
+  column-gap: 50px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 285px 135px 45px;
+    row-gap: 25px;
+    padding: 24px 38px 28px;
+    border: 1px solid #cdcdcd;
+  }
+   @media (min-width: $desktop-width) {
+    padding: 15px 0;
+    border-left: none;
+    border-right: none;
+    column-gap: 40px;
+    align-items: center;
+   }
 }
 
 .additional__item-title {
@@ -68,12 +158,22 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #222222;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .additional__volume,
 .additional__price {
   line-height: 14px;
   font-weight: 400;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }
 
 .additional__button {
@@ -81,8 +181,21 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  grid-column: 1/-1;
+  padding: 10px 109px;
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
   background-color: $bg-basic-green;
+  cursor: pointer;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 285px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 91px;
+    grid-column: 4/5;
+  }
 }
