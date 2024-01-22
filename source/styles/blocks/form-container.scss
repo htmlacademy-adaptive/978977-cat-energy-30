@@ -4,10 +4,20 @@
   line-height: 36px;
   font-weight: 400;
   color: $secondary-color-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .form-container__text {
   font-family: $primary-font;
   text-transform: uppercase;
   color: $secondary-color-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

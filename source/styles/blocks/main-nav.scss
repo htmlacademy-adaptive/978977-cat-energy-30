@@ -6,6 +6,37 @@
   text-transform: uppercase;
 }
 
+.main-nav__toggle {
+  width: 18px;
+  min-height: 18px;
+  background-image: url("../../images/icons/icon-close.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__wrapper {
+  min-width: 280px;
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 475px;
+    gap: 33px;
+  }
+}
+
 .main-nav__list {
   list-style: none;
 }
