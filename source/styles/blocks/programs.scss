@@ -1,7 +1,7 @@
 .programs {
   @media (min-width: $desktop-width) {
-  padding-bottom: 0;
-  min-width: 1220px;
+    padding-bottom: 0;
+    min-width: 1220px;
   }
 }
 
@@ -120,7 +120,7 @@
   display: block;
   position: absolute;
   left: -8px;
-  top: -7px ;
+  top: -7px;
   width: 67px;
   height: 50px;
   background-image: url("../../images/icons/stack.svg#cat_back-go");
