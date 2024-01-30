@@ -13,7 +13,7 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header__container container">
+      <div class="main-header__logo-wrapper">
         <a class="main-header__logo" href="index.html">
           <picture>
             <source
@@ -37,7 +37,7 @@
               alt="Логотип магазина"
             />
           </picture>
-          <picture>
+          <picture class="main-header__logo-text">
             <source
               class="main-header__logo-text"
               height="21"
@@ -63,8 +63,8 @@
             />
           </picture>
         </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle button-burger" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <div class="main-nav__wrapper">
