@@ -14,7 +14,7 @@
   </head>
   <body class="page__body">
     <header class="main-header main-header--index">
-      <div class="main-header__container container">
+      <div class="main-header__logo-wrapper">
         <a class="main-header__logo" href="index.html">
           <picture>
             <source
@@ -38,7 +38,7 @@
               alt="Логотип магазина"
             />
           </picture>
-          <picture>
+          <picture class="main-header__logo-text">
             <source
               class="main-header__logo-text"
               height="21"
@@ -64,14 +64,19 @@
             />
           </picture>
         </a>
-        <nav class="main-nav main-nav--closed">
+
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle button-burger" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list nav-list">
-              <li class="nav-list__item nav-list__item-active">
-                <a class="nav-list__link nav-list__index" href="#">главная</a>
+              <li class="nav-list__item">
+                <a
+                  class="nav-list__link nav-list__item--active nav-list__index"
+                  href="#"
+                  >главная</a
+                >
               </li>
               <li class="nav-list__item">
                 <a class="nav-list__link nav-list__index" href="catalog.html"
@@ -173,76 +178,84 @@
           </li>
           <li class="advantages__item advantages__item--result">
             <p class="advantages__description">
-              Уже через месяц наслаждайтесь изменениями к лучшему вашего
-              питомца!
+              Уже&nbsp;через&nbsp;месяц наслаждайтесь изменениями к лучшему
+              вашего питомца!
             </p>
           </li>
         </ol>
       </section>
       <section class="example">
         <div class="example__container container">
-          <h2 class="example__title">Живой пример</h2>
-          <p class="example__description">
-            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-            Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
-            этом он не менял своих привычек и по-прежнему спит по 16 часов в
-            день.
-          </p>
-          <dl class="example__list">
-            <div class="example__item">
-              <dt class="example__value">5кг</dt>
-              <dd class="example__text">снижение веса</dd>
+          <div class="example__text-wrapper">
+            <h2 class="example__title">Живой пример</h2>
+            <p class="example__description">
+              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
+              на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
+              При этом он не менял своих привычек и по-прежнему спит по 16 часов
+              в день.
+            </p>
+            <div class="example__wrapper">
+              <dl class="example__list">
+                <div class="example__item">
+                  <dt class="example__value">5кг</dt>
+                  <dd class="example__text">снижение веса</dd>
+                </div>
+                <div class="example__item">
+                  <dt class="example__value">60 ДНЕЙ</dt>
+                  <dd class="example__text">затрачено времени</dd>
+                </div>
+              </dl>
+              <p class="example__costs">
+                Затраты на питание: <span>15 000 РУБ.</span>
+              </p>
             </div>
-            <div class="example__item">
-              <dt class="example__value">60 ДНЕЙ</dt>
-              <dd class="example__text">затрачено времени</dd>
-            </div>
-          </dl>
-          <p class="example__costs">Затраты на питание: 15 000 РУБ.</p>
+          </div>
           <div class="example__progress">
-            <div class="example__progress-before">
-              <picture>
-                <source
-                  height="512"
-                  width="560"
-                  type="image/png"
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/cat_before@1x.png 1x,
-                    ./images/cat_before@2x.png 2x
-                  "
-                />
-                <img
-                  class="example__before"
-                  src="./images/cat_before-m@1x.png"
-                  srcset="./images/cat_before-m@2x.png 2x"
-                  height="256"
-                  width="280"
-                  alt="кот до"
-                />
-              </picture>
-            </div>
-            <div class="example__progress-after">
-              <picture>
-                <source
-                  height="512"
-                  width="560"
-                  type="image/png"
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/cat_after@1x.png 1x,
-                    ./images/cat_after@2x.png 2x
-                  "
-                />
-                <img
-                  class="example__after"
-                  src="./images/cat_after-m@1x.png"
-                  srcset="./images/cat_after-m@2x.png 2x"
-                  height="256"
-                  width="280"
-                  alt="кот после"
-                />
-              </picture>
+            <div class="example__images">
+              <div class="example__progress-before">
+                <picture>
+                  <source
+                    height="512"
+                    width="560"
+                    type="image/png"
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/cat_before@1x.png 1x,
+                      ./images/cat_before@2x.png 2x
+                    "
+                  />
+                  <img
+                    class="example__before"
+                    src="./images/cat_before-m@1x.png"
+                    srcset="./images/cat_before-m@2x.png 2x"
+                    height="256"
+                    width="280"
+                    alt="кот до"
+                  />
+                </picture>
+              </div>
+              <div class="example__progress-after">
+                <picture>
+                  <source
+                    height="512"
+                    width="560"
+                    type="image/png"
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/cat_after@1x.png 1x,
+                      ./images/cat_after@2x.png 2x
+                    "
+                  />
+                  <img
+                    class="example__after"
+                    src="./images/cat_after-m@1x.png"
+                    srcset="./images/cat_after-m@2x.png 2x"
+                    height="256"
+                    width="280"
+                    alt="кот после"
+                  />
+                </picture>
+              </div>
             </div>
             <button class="example__slider" type="button">
               <span class="visually-hidden">Сравнение до/после</span>
@@ -254,9 +267,12 @@
         <div class="location__container container">
           <h2 class="visually-hidden">Как нас найти</h2>
           <div class="location__text-wrapper">
-            <p class="location__invit">приглашаем к сотрудничеству дилеров!</p>
+            <p class="location__invit">
+              приглашаем к&nbsp;сотрудничеству дилеров!
+            </p>
             <address class="location__address">
-              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+              ул. Большая Конюшенная, д. 19/8
+              <span class="location__address-city">Санкт-Петербург</span>
             </address>
           </div>
         </div>
@@ -289,61 +305,56 @@
             <use href="images/icons/stack.svg#footer-logo"></use>
           </svg>
         </a>
-        <div class="main-footer__social">
-          <ul class="main-footer__social-list">
-            <li class="main-footer__social-item">
-              <a
-                class="main-footer__social-link"
-                href="https://vk.com/htmlacademy"
+        <ul class="main-footer__social-list">
+          <li class="main-footer__social-item">
+            <a
+              class="main-footer__social-link"
+              href="https://vk.com/htmlacademy"
+            >
+              <span class="visually-hidden">Мы в ВК</span>
+              <svg
+                class="main-footer__logo-vk"
+                height="22"
+                width="28"
+                aria-hidden="true"
+                focusable="false"
               >
-                <span class="visually-hidden">Мы в ВК</span>
-                <svg
-                  class="main-footer__logo-vk"
-                  height="22"
-                  width="28"
-                  aria-hidden="true"
-                  focusable="false"
-                >
-                  <use href="images/icons/stack.svg#vkontakte"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="main-footer__social-item">
-              <a
-                class="main-footer__social-link"
-                href="https://www.youtube.com/user/htmlacademyru"
+                <use href="images/icons/stack.svg#vkontakte"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="main-footer__social-item">
+            <a
+              class="main-footer__social-link"
+              href="https://www.youtube.com/user/htmlacademyru"
+            >
+              <span class="visually-hidden">Мы на youtube</span>
+              <svg
+                class="main-footer__logo-youtube"
+                height="22"
+                width="28"
+                aria-hidden="true"
+                focusable="false"
               >
-                <span class="visually-hidden">Мы на youtube</span>
-                <svg
-                  class="main-footer__logo-youtube"
-                  height="22"
-                  width="28"
-                  aria-hidden="true"
-                  focusable="false"
-                >
-                  <use href="images/icons/stack.svg#youtube"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="main-footer__social-item">
-              <a
-                class="main-footer__social-link"
-                href="https://t.me/htmlacademy"
+                <use href="images/icons/stack.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="main-footer__social-item">
+            <a class="main-footer__social-link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Мы в telegram</span>
+              <svg
+                class="main-footer__logo-telegram"
+                height="22"
+                width="28"
+                aria-hidden="true"
+                focusable="false"
               >
-                <span class="visually-hidden">Мы в telegram</span>
-                <svg
-                  class="main-footer__logo-telegram"
-                  height="22"
-                  width="28"
-                  aria-hidden="true"
-                  focusable="false"
-                >
-                  <use href="images/icons/stack.svg#telegram"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+                <use href="images/icons/stack.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
         <div class="main-footer__logo-academy">
           <a
             class="main-footer__logo-academy-link"
@@ -364,5 +375,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

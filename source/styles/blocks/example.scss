@@ -2,11 +2,11 @@
   background-color: $bg-basic-grey;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(to bottom, $primary-background-color 619px, transparent 619px);
+    background-image: linear-gradient(to bottom, $primary-background-color 588px, transparent 588px);
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(to bottom, $primary-background-color 205px, transparent 205px);
+    background-image: linear-gradient(to bottom, $primary-background-color 149px, transparent 149px);
   }
 }
 
@@ -15,13 +15,33 @@
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 45px;
+    padding-top: 14px;
     padding-bottom: 103px;
   }
 
   @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 440px 1fr;
+    column-gap: 220px;
+    min-width: 1220px;
     padding-top: 0;
     padding-bottom: 75px;
+  }
+}
+
+.example__text-wrapper {
+  @media (min-width: $desktop-width) {
+    max-width: 440px;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+
   }
 }
 
@@ -31,10 +51,62 @@
   line-height: 40px;
   font-weight: 400;
   color: $secondary-color-text;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 11px;
+    padding-bottom: 85px;
+  }
+}
+
+.example__description {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 60px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 433px;
+    padding-bottom: 70px;
+  }
+}
+
+.example__list {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  justify-content: center;
+  column-gap: 32px;
+  margin: 0 0 18px;
+  align-items: start;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 42px;
+    margin-bottom: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
+  }
+}
+
+.example__item {
+  text-align: center;
+  width: 124px;
+  overflow-wrap: break-word;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
   }
 }
 
@@ -43,12 +115,40 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  text-transform: uppercase;
+  padding: 14px 14px 18px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__text {
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
+  max-width: 80px;
+  width: fit-content;
+  position: relative;
+  display: block;
+  background-color: $bg-basic-grey;
+  margin: -10px auto 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    max-width: 125px;
+    background-color: #ffffff;
+    box-shadow: -8px 0 0 #ffffff, 8px 0 0 #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $bg-basic-grey;
+    box-shadow: -8px 0 0 $bg-basic-grey, 8px 0 0 $bg-basic-grey;
+  }
 }
 
 .example__costs {
@@ -57,18 +157,51 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 20px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+    font-size: 20px;
+    line-height: 20px;
+    max-width: 192px;
+    text-align: right;
+    padding: 0;
+    padding-top: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 440px;
+    flex-direction: row;
+    column-gap: 63px;
+    margin: 0;
+  }
 }
 
 .example__progress {
   position: relative;
   width: 280px;
   height: 256px;
+  margin: 0 auto;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
     width: 560px;
     height: 512px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 11px;
+  }
+}
+
+.example__images {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
 }
 
 .example__progress-before {
@@ -78,6 +211,7 @@
   overflow: hidden;
   width: 50%;
   height: 100%;
+  background-color: $bg-basic-grey;
 
   @media (min-width: $tablet-width) {
     background-image: linear-gradient(to bottom, $primary-background-color 152px, transparent 152px);
