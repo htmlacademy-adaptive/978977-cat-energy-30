@@ -10,11 +10,13 @@
   gap: 20px;
   flex-direction: column;
   list-style: none;
+  min-width: 280px;
   padding: 0;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     gap: 30px;
+    min-width: 708px;
   }
 
   @media (min-width: $desktop-width) {

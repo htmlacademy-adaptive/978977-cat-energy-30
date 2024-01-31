@@ -30,6 +30,10 @@
   display: flex;
   flex-direction: column;
 
+  @media (min-width: $tablet-width) {
+    min-width: 708px;
+  }
+
   @media (min-width: $desktop-width) {
     min-width: 1220px;
   }
