@@ -1,0 +1,15 @@
+.input {
+  color: $base-color-text;
+
+  &:hover {
+    outline: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid $base-color-text;
+  }
+
+  &:focus:required:invalid {
+    outline: 2px solid #ff8282;
+  }
+}
