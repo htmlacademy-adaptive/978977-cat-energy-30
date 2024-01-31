@@ -174,4 +174,10 @@
     max-width: 220px;
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    & br {
+      display: none;
+    }
+  }
 }
